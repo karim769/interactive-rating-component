@@ -4,7 +4,23 @@ let mainElement=document.querySelector("main");
 
 let ratesCounter=0;
 
+function removeClass(){
 
+  if(ratesCounter!=0){
+
+    rateElements.forEach(function(element){
+
+    if(element.textContent==ratesCounter){
+      
+      element.classList.remove("selected");
+
+    }  
+
+    })
+
+  }
+
+}
 
  let rateElements= document.querySelectorAll(".clicked");
     rateElements.forEach(function(rate){
@@ -13,20 +29,9 @@ let ratesCounter=0;
 
           if(e.target){
 
-            if(ratesCounter!=0){
+            // this mothed will remove the selected class that add befor
+              removeClass();
 
-          rateElements.forEach(function(element){
-
-          if(element.textContent==ratesCounter){
-            
-            element.classList.remove("selected");
-
-          }  
-
-          })
-
-        }
-        
         this.classList.add("selected");
         ratesCounter=Number(this.textContent);
       }
