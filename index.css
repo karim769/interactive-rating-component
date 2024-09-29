@@ -1,0 +1,166 @@
+:root
+{
+
+    /* - Family: [Overpass] */
+    /* - Weights: 400, 700 */
+
+    --family: Overpass;
+
+
+    /* Colors */
+
+     /* Primary */
+
+--Orange: hsl(25, 97%, 53%);
+
+  /* Neutral */
+
+--White: hsl(0, 0%, 100%);
+--Light-Grey: hsl(217, 12%, 63%);
+--Dark-Blue: hsl(213, 19%, 18%);
+--Very-Dark-Blue: hsl(216, 12%, 8%);
+    
+}
+
+*{
+
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+
+}
+
+body
+{
+
+font-family: var(--family);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: var(--White);
+background-color: var(--Very-Dark-Blue);
+}
+
+main
+{
+
+    background-color: var(--Dark-Blue);
+    margin: 1em;
+    padding: 1.5em;
+    border-radius: 10px;
+    max-width: 22em;
+}
+
+h1
+{
+    margin: revert ;
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+p{
+
+    color: var(--Light-Grey);
+    line-height: 135%;
+}
+
+.circle
+{
+    width:2.5em;
+    height: 2.5em;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:hsl(213deg 11.81% 24.08%);
+    
+}
+
+
+
+.first-card >div:nth-of-type(2)
+{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 6em;
+
+}
+
+
+.first-card >div:nth-of-type(2) div{
+    transition: 200ms;
+cursor: pointer;
+
+
+}
+
+.first-card >div:nth-of-type(2) div:hover{
+    cursor: pointer;
+    background-color: var(--Orange);
+    color:var(--Very-Dark-Blue);
+    }
+
+
+    .selected
+    {
+
+        background-color: white;
+        color: black;
+
+    }
+
+
+form input{
+
+    width: 100%;
+    background-color: var(--Orange);
+    text-transform: uppercase;
+    padding:1em 0;
+    border-radius: 25px;
+    border: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 200ms;
+
+}
+
+form input:hover
+{
+
+background-color: var(--White);
+
+}
+
+.second-card
+{
+
+    text-align: center;
+
+}
+.second-card img{
+
+    margin: 1em auto;
+}
+
+.second-card div{
+
+    color: var(--Orange);
+    margin: auto;
+    padding: 0.7em;
+    font-weight: 400;
+    opacity: 0.7;
+    width: fit-content;
+    border-radius: 1.5em;
+    background-color: hsl(213deg 11.81% 24.08%);
+}
+
+.second-card div p{
+
+
+
+}
